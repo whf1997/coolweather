@@ -1,8 +1,9 @@
 package com.coolweather.android.db;
 
-import org.litepal.exceptions.DataSupportException;
+import org.litepal.crud.LitePalSupport;
 
-public class County extends DataSupportException {
+
+public class County extends LitePalSupport {
 
     private int id;
 
@@ -44,7 +45,4 @@ public class County extends DataSupportException {
         this.cityId = cityId;
     }
 
-    public County(String errorMessage) {
-        super(errorMessage);
-    }
 }
