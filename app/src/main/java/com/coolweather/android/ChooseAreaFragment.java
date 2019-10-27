@@ -148,6 +148,7 @@ public class ChooseAreaFragment extends Fragment {
      *查询全国所有的省，优先从数据库查询，如果没有查询到再去服务器上查询
      */
     private void queryProvinces(){
+        System.out.println("nihao");
         titleText.setText("中国");
         backButton.setVisibility(View.GONE);
         provinceList = LitePal.findAll(Province.class);
